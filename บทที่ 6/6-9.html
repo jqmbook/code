@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+	<script src="jquery-1.8.2.min.js"></script>
+	<script src="jquery.mobile-1.2.0.min.js"></script>
+		
+	<style type="text/css">	
+			
+		.ui-header .ui-title, 	.ui-footer .ui-title{
+			font-size: 20px;			
+		}
+			
+		.ui-content {
+			font-size: 18px;
+		}
+			
+		.ui-header .ui-btn-left {
+			top: 9px;
+		}
+   			
+		.ui-header .ui-btn-right {
+			top: 9px;
+		}
+			
+			
+	</style>
+</head>
+<body>
+	
+	<div data-role="page" id="page-1">			
+		<div data-role="header" data-position="fixed">				
+			<h1>Header</h1>				
+		</div>
+		<div data-role="content">
+			
+			<fieldset data-role="controlgroup">
+				<legend>คุณชอบเครื่องเกมส์ใด?</legend>			
+				
+				<select name="select" id="select-id" data-native-menu="false" multiple="multiple">		
+					<option>เครื่องเกมส์คอนโซล...</option>			
+					<option value="PS3">PS3</option>
+					<option value="Xbox360">Xbox360</option>
+					<option value="Wii">Wii</option>
+					
+				</select>
+					
+				<select name="select" id="select-id2" data-native-menu="false" multiple="multiple">
+					<option>เครื่องเกมส์พกพา...</option>
+					<option value="3ds">3DS</option>
+					<option value="psvita">PS Vita</option>					
+				</select>		
+			</fieldset>
+		</div>						
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>		
+		</div>
+	</div>		
+				
+</body>
+
+</html>
