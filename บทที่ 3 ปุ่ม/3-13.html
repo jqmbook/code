@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />
+	<script src="jquery-1.8.2.min.js"></script>
+	<script src="jquery.mobile-1.3.0.min.js"></script>
+      
+	<style type="text/css">	
+		.ui-icon-webapp-food {
+			background: url("food.png");			
+		}
+		
+		
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+			.ui-icon-webapp-food {
+				background: url("food@2x.png");
+				background-size: 18px 18px;
+			}
+		}
+
+		
+			
+	</style>
+</head>
+   
+<body>
+	<div data-role="page" id="page-1">	
+		<div data-role="header" data-position="fixed">
+			<h1>Header</h1>
+		</div>
+		<div data-role="content">
+			<a data-role="button" href="#" data-icon="webapp-food">button</a>		
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	</div>
+</body> 
+</html>

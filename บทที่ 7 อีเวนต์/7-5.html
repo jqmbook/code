@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pagebeforeload event</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />
+	<script src="jquery-1.8.2.min.js"></script>
+	<script src="jquery.mobile-1.3.0.min.js"></script>
+		
+	<script>
+		
+		$(document).on("pagebeforehide", "#page-1", function(event, data){
+			console.log("Page 1 เกิดอีเวนต์ pagebeforehide, id ของ page ถัดไปคือ "+ data.nextPage.attr("id"));				
+		});	
+		
+		
+		$(document).on("pagehide", "#page-1", function(event, data){	
+			console.log("Page 1 เกิดอีเวนต์ pagehide");			
+		});	
+			
+		
+		$(document).on("pagebeforeshow", "#page-2", function(event, data){	
+			console.log("Page 2 เกิดอีเวนต์ pagebeforeshow, id ของ page ก่อนหน้าคือ  "+data.prevPage.attr("id"));			
+		});	
+		
+		$(document).on("pageshow", "#page-2", function(event, ui){	
+			console.log("Page 2 เกิดอีเวนต์ pageshow");		
+		});		
+	
+	</script>
+		
+		
+</head>
+<body>
+				
+	<div data-role="page" id="page-1">
+		<div data-role="header" data-position="fixed"><h1>Page 1</h1></div>
+		<div data-role="content">
+			Page 1<br>
+			<a href="#page-2">Go to page 2.</a><br>							
+		</div>
+		<div data-role="footer" data-position="fixed"><h4>Footer</h4></div>
+	</div>
+		
+	<div data-role="page" id="page-2">
+		<div data-role="header" data-position="fixed">
+			<h1>Page 2</h1>
+			<a href="#" data-rel="back" data-icon="back">Back</a>
+		</div>
+		<div data-role="content">
+			Page 2<br>							
+		</div>
+		<div data-role="footer" data-position="fixed"><h4>Footer</h4></div>
+	</div>
+
+</body>
+	
+</html>

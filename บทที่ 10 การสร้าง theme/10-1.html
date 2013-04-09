@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="icon_diamon57x57.png" sizes="57x57">
+	<link rel="apple-touch-icon" href="icon_diamon72x72.png" sizes="72x72">
+	<link rel="apple-touch-icon" href="icon_diamon114x114.png" sizes="114x114">
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />
+	<script src="jquery-1.8.2.min.js"></script>
+	<script src="jquery.mobile-1.3.0.min.js"></script>
+</head>
+<body>
+	
+	<div data-role="page" id="page-1">			
+		<div data-role="header" data-position="fixed">				
+			<h1>Header</h1>				
+		</div>
+		<div data-role="content">
+			<form action="#" method="post" name="jqmform" id="myformid">
+         		
+				<fieldset data-role="controlgroup">
+					<legend>เพศ :</legend>         			
+					<input type="radio" name="sex" id="r1" value="male" />
+					<label for="r1">ชาย</label>
+     	
+					<input type="radio" name="sex" id="r2" value="female" /> 
+					<label for="r2">หญิง</label>    	          				
+				</fieldset>        			
+			</form>
+		</div>						
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>		
+		</div>
+	</div>		
+				
+</body>
+	
+</html>

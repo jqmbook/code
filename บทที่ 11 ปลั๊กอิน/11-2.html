@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ปลั๊กอิน SimpleDialog2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />	
+	<link rel="stylesheet" type="text/css" href="jquery.mobile.simpledialog.css" /> 
+				
+	
+	<script src="jquery-1.8.2.min.js"></script>
+	<script src="jquery.mobile-1.3.0.min.js"></script>
+	<script src="jquery.mobile.simpledialog2.js"></script>
+		
+	<script>
+	
+		$(document).on("click", "#simplebutton", function(event){
+				
+			$('<div>').simpledialog2({
+				mode: "button",
+				headerText: "เฮดเดอร์",
+				headerClose: true,
+				buttonPrompt: "ข้อความในไดอะล็อกซ์",
+				buttons : {
+					"ตกลง": {
+						icon:"home",
+						click: function(){
+							this.close();
+						}
+					},
+					"ไม่ตกลง": {
+						icon: "gear",
+						theme: "e",
+						click: function(){
+							this.close();
+						}
+					}
+				}
+			});
+		});
+			
+	
+	</script>
+		
+</head>
+<body>
+				
+	<div data-role="page" id="page-1">
+		<div data-role="header" data-position="fixed"><h1>Page 1</h1></div>
+		<div data-role="content">
+			<div data-role="button" id="simplebutton">แสดงไดอะล็อกบ็อกซ์</div>							
+		</div>
+			
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	</div>
+
+</body>
+
+</html>
