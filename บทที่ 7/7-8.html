@@ -11,7 +11,7 @@
 	<script>
 		$(document).on("pagebeforechange", function(event, data){
 			
-			if(typeof data.toPage!=="string"){
+			if(typeof data.toPage !== "string"){
 				//สถานการณ์ก่อนจะนำ page มาแสดงบนหน้าจอ
 				console.log("เกิดอีเวนต์ pagebeforechange, ก่อนแสดง page, มี id ของ page คือ "+ data.toPage.attr("id"));				
 			}
