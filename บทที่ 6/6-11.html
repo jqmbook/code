@@ -40,26 +40,33 @@
 		<div data-role="header" data-position="fixed">				
 			<h1>Header</h1>				
 		</div>
-		<div data-role="content">
-			<form action="process.php" method="post" name="jqmform" id="myformid">				
-				<div data-role="fieldcontain">
-					<label for="uname">Username :</label>
-					<input type="text" name="username" id="uname" value=""/> 
-				</div>
-         		
-				<div data-role="fieldcontain">
-					<label for="pwd">Password :</label>
-					<input type="password" name="password" id="pwd" value=""/>         			
-				</div>
-         		
-				<input type="submit" value="ok"/>
-      			
-			</form>
-		</div>						
-		<div data-role="footer" data-position="fixed">
-			<h4>Footer</h4>		
-		</div>
-	</div>		
+		<div data-role="content" data-theme="a">
+			<form action="somefiles.php" method="post" name="jqmform"
+			id="myformid">
+			<label for="uname">Username :</label>
+			<input type="text" name="username" id="uname" value=""
+			data-theme="b"/>
+			<fieldset data-role="controlgroup">
+				<legend>Sex:</legend>
+				<input type="radio" name="sex" id="r1" value="male"
+				data-theme="e"/>
+				<label for="r1">Male</label>
+				<input type="radio" name="sex" id="r2" value="female" />
+				<label for="r2">Femal</label>
+			</fieldset>
+			<select name="select" id="select-id" data-native-menu="false"
+			data-theme="d">
+			<option>Please choose...</option>
+			<option value="PS3">PS3</option>
+			<option value="Xbox360">Xbox360</option>
+			<option value="Wii">Wii</option>
+			<input type="submit" value="ok" />
+		</form>
+	</div>				
+	<div data-role="footer" data-position="fixed">
+		<h4>Footer</h4>		
+	</div>
+</div>		
 				
 </body>
 	
