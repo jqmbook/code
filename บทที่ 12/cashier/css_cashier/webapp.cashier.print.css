@@ -1,0 +1,7 @@
+div[data-role="header"]{
+	display: none;
+}
+	
+div[data-role="footer"]{
+	display: none;
+}

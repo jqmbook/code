@@ -1,0 +1,57 @@
+
+#grid_bill_detail .ui-block-a {
+	font-size:18px;
+	width:50%;
+	height:30px;
+	line-height:2;
+
+}
+
+#grid_bill_detail .ui-block-b {
+	font-size:16px;
+	width:25%;	
+	height:30px;
+	text-align:right;
+	line-height:2;
+
+}
+
+#grid_bill_detail .ui-block-c {
+	font-size:16px;
+	width:25%;
+	height:30px;	
+	text-align:right;
+	line-height:2;
+
+}
+
+.grid_heading{
+	font-size:20px;
+	font-weight:bold;
+	padding-bottom:30px;	
+	border-bottom:1px solid black;
+	margin-bottom:10px;
+}
+
+
+#grid_bill_footer .ui-block-a {
+	font-size:18px;
+	padding-left:5px;
+	padding-right:5px;
+	height:30px;
+	line-height:1;
+	padding-top:9px;
+	text-align:center;
+}
+
+#grid_bill_footer .ui-block-b {
+	font-size:18px;
+	padding-left:15px;
+	height:30px;
+	line-height:2;
+	padding-top:11px;
+}
+
+#grid_bill_footer .ui-block-c {
+	padding-left:15px;
+}
