@@ -1,16 +1,16 @@
-สำหรับระบบปฏิบัติการ Windows 7 หากผู้อ่านเข้าถึงไฟล์ตัวอย่างบทที่ 12 ด้วย url ที่มีภาษาไทย เช่น
+๏ปฟเธชเธณเธซเธฃเธฑเธเธฃเธฐเธเธเธเธเธดเธเธฑเธ•เธดเธเธฒเธฃ Windows 7 เธซเธฒเธเธเธนเนเธญเนเธฒเธเน€เธเนเธฒเธ–เธถเธเนเธเธฅเนเธ•เธฑเธงเธญเธขเนเธฒเธเธเธ—เธ—เธตเน 12 เธ”เนเธงเธข url เธ—เธตเนเธกเธตเธ เธฒเธฉเธฒเนเธ—เธข เน€เธเนเธ
 
-http://localhost/code-master/บทที่ 12/ch12/serve/view_table.php
+http://localhost/code-master/เธเธ—เธ—เธตเน 12/ch12/serve/view_table.php
 
-จะทำให้เกิดข้อผิดพลาดแจ้งทางหน้าจอว่า
+เธเธฐเธ—เธณเนเธซเนเน€เธเธดเธ”เธเนเธญเธเธดเธ”เธเธฅเธฒเธ”เนเธเนเธเธ—เธฒเธเธซเธเนเธฒเธเธญเธงเนเธฒ
 
 Warning: Unknown: failed to open stream: No such file or directory in Unknown on line 0
 
-Fatal error: Unknown: Failed opening required 'C:/AppServ/www/code-master/บทที่ 12/ch12/serve/view_table.php' (include_path='.;C:\php5\pear') in Unknown on line 0
+Fatal error: Unknown: Failed opening required 'C:/AppServ/www/code-master/เธเธ—เธ—เธตเน 12/ch12/serve/view_table.php' (include_path='.;C:\php5\pear') in Unknown on line 0
 
 
-วิธีแก้ ให้เปลียนชื่อแฟ้มจาก "บทที่ 12" ให้เป็นชื่อภาษาอังกฤษ เช่น "workshop"
+เธงเธดเธเธตเนเธเน เนเธซเนเน€เธเธฅเธตเธขเธเธเธทเนเธญเนเธเนเธกเธเธฒเธ "เธเธ—เธ—เธตเน 12" เนเธซเนเน€เธเนเธเธเธทเนเธญเธ เธฒเธฉเธฒเธญเธฑเธเธเธคเธฉ เน€เธเนเธ "workshop"
 
 http://localhost/code-master/workshop/ch12/serve/view_table.php
 
-จะสามารถแก้ไขปัญหานี้ได้
+เธเธฐเธชเธฒเธกเธฒเธฃเธ–เนเธเนเนเธเธเธฑเธเธซเธฒเธเธตเนเนเธ”เน
