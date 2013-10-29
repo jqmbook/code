@@ -9,8 +9,10 @@ $sql_insert_bill = "insert into Bill ";
 $sql_insert_bill .= "select null, sum(menu_price * quantity),Temp_Orders.table_id,null, now() ";
 $sql_insert_bill .= "from Temp_Orders join Menu on Temp_Orders.menu_id=Menu.menu_id ";
 $sql_insert_bill .= "join DinningTable on Temp_Orders.table_id=DinningTable.table_id ";
-$sql_insert_bill .= "where (status like 'order' or status like 'served') and table_number like '". $_POST['table_number'] ."'";
-	
+//$sql_insert_bill .= "where (status like 'order' or status like 'served') and table_number like '". $_POST['table_number'] ."'";
+//fix for MySQL 5.0.51b (AppServ 2.5.10)
+$sql_insert_bill .= "where (status like 'order' or status like 'served') and table_number like '". $_POST['table_number'] ."' group by DinningTable.table_number";
+
 $res1 = mysql_query($sql_insert_bill) or die(mysql_error());
 
 $error_msg = "";
